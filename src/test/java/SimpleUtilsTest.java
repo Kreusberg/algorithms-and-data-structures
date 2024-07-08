@@ -1,5 +1,4 @@
-package academy.learnprogramming.algorithm.utils;
-
+import academy.learnprogramming.algorithm.utils.SimplesUtils;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
