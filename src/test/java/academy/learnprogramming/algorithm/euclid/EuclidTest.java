@@ -22,7 +22,6 @@ public class EuclidTest {
 
     @Test
     public void gcd2Test() {
-        Euclid e = new Euclid();
         Assert.assertEquals(2, e.gcd2(10, 2));
         Assert.assertEquals(2, e.gcd2(22, 6));
     }
@@ -32,6 +31,5 @@ public class EuclidTest {
         Assert.assertEquals(e.gcd(10,2), e.gcd2(10, 2));
         Assert.assertEquals(e.gcd(22,6), e.gcd2(22, 6));
         Assert.assertEquals(e.gcd(182,74), e.gcd2(182, 74));
-
     }
 }
