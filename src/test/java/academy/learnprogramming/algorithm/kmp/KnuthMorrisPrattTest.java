@@ -4,15 +4,51 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Arrays;
 
 public class KnuthMorrisPrattTest {
+
 
     KnuthMorrisPratt kmp = null;
 
     @Before
     public void init() {
         kmp = new KnuthMorrisPratt();
+    }
+
+    @Test
+    public void searchTest() {
+        String array = "abazacabababac";
+        String pattern = "ababac";
+        int index = kmp.search(array.toCharArray(), pattern.toCharArray());
+
+        Assert.assertEquals(8, index);
+    }
+
+    @Test
+    public void searchTest2() {
+        String array = "aabaaabacaz";
+        String pattern = "aabacaz";
+        int index = kmp.search(array.toCharArray(), pattern.toCharArray());
+
+        Assert.assertEquals(4, index);
+    }
+
+    @Test
+    public void searchTest3() {
+        String array = "this is a test";
+        String pattern = "is a ";
+        int index = kmp.search(array.toCharArray(), pattern.toCharArray());
+
+        Assert.assertEquals(5, index);
+    }
+
+    @Test
+    public void searchTest4() {
+        String array = "cantfindtheindex";
+        String pattern = "foo";
+        int index = kmp.search(array.toCharArray(), pattern.toCharArray());
+
+        Assert.assertEquals(-1, index);
     }
 
     @Test
