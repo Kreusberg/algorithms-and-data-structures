@@ -1,7 +1,7 @@
 package academy.learnprogramming.algorithm.boyermoore;
 
 /**
- * This implementatino is the simplified version of the Boyer Moore Algorithm.
+ * This implementation is the simplified version of the Boyer Moore Algorithm.
  * It only implements the Bad Character Table.
  */
 public class BoyerMooreHorspool {
